@@ -11,8 +11,11 @@ const RepositoryInfo = (props) => {
             return (
                 <div className="repository-info col-md-5 m-2 p-3" key={repoData.id}>
                     <div className="repo-name">
-                        <span className="name">{repoData.name}</span><br />
-                        <span className="full-name">{repoData.full_name}</span>
+                        <a href={repoData.html_url} target="_blank" style={{ color: '#25282D' }} rel="noopener noreferrer" >
+                            <span className="name">{repoData.name}</span><br />
+                            <span className="full-name">{repoData.full_name}</span>
+                        </a>
+
                     </div>
                     <div className="repo-language-info row mt-4">
                         <div className="language col-md-4">
