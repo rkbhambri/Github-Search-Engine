@@ -11,7 +11,8 @@ class Layout extends Component {
 		searchBy: 'username',
 		userData: null,
 		repoData: null,
-		userRepo: null
+		userRepo: null,
+		isUserNotFound: false
 	};
 
 	searchOptionHandler = (event) => {
@@ -21,30 +22,6 @@ class Layout extends Component {
 			searchBy: event.target.value
 		});
 	};
-
-	// getUserData = (userName) => {
-	// 	const url = 'https://api.github.com/users/' + userName + '?client_id=4ddf9cf2655d5a56cc61&client_secret=695a1d2b6e44672200c8f31a01530f10d9e6206c';
-	// 	fetch(url)
-	// 		.then(response => response.json())
-	// 		.then(data => {
-	// 			this.setState({
-	// 				...this.state,
-	// 				userData: data
-	// 			});
-	// 		})
-	// };
-
-	// getUserRepo = (userName) => {
-	// 	const url = 'https://api.github.com/users/' + userName + '/repos?client_id=4ddf9cf2655d5a56cc61&client_secret=695a1d2b6e44672200c8f31a01530f10d9e6206c';
-	// 	fetch(url)
-	// 		.then(response => response.json())
-	// 		.then(data => {
-	// 			this.setState({
-	// 				...this.state,
-	// 				userRepo: data
-	// 			});
-	// 		})
-	// };
 
 	searchInputHandler = (event) => {
 		let userData = this.state.userData;
@@ -57,12 +34,18 @@ class Layout extends Component {
 				userData = getUserData(event.target.value);
 				userRepo = getUserRepo(event.target.value);
 				userData.then((userData) => {
-					userRepo.then((userRepo) => {
-						this.setState({
-							userData,
-							userRepo
+					if (userData.message !== 'Not Found') {
+						userRepo.then((userRepo) => {
+							this.setState({
+								userData,
+								userRepo,
+								isUserNotFound: false
+							});
 						});
-					});
+					}
+					if (userData.message === 'Not Found') {
+						this.setState({ isUserNotFound: true })
+					}
 				});
 				// userRepo.then((userRepo) => {
 				// 	this.setState({
@@ -86,6 +69,13 @@ class Layout extends Component {
 
 	render() {
 		let userDetails = null;
+		if (this.state.isUserNotFound) {
+			userDetails = (
+				<div className="message text-center pt-5">
+					<h2>User not found</h2>
+				</div>
+			)
+		}
 		if (this.state.userData !== null && this.state.userRepo !== null) {
 			userDetails = (
 				<div className="user-details row mt-5">
@@ -93,7 +83,8 @@ class Layout extends Component {
 					<Repositories userRepo={this.state.userRepo} />
 				</div>
 			);
-		} else {
+		}
+		if (!this.state.isUserNotFound && this.state.userData === null && this.state.userRepo === null) {
 			userDetails = (
 				<div className="message text-center pt-5">
 					<h2>Please Enter search String</h2>

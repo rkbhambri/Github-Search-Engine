@@ -1,19 +1,4 @@
 
-// export const saveEntity = async (entityId, data) => {
-//     return new Promise((resolve, reject) => {
-//         const botId = getItem('botId');
-//         axios.put("entity/" + entityId + "?bot_id=" + botId, data)
-//             .then(response => {
-//                 resolve(response)
-//             })
-//             .catch(error => {
-//                 // error = "Action is not allowed to be empty" ;
-//                 reject(error);
-//             });
-//     });
-// };
-
-
 export const getUserData = async (userName) => {
     return new Promise((resolve, reject) => {
         const url = 'https://api.github.com/users/' + userName + '?client_id=4ddf9cf2655d5a56cc61&client_secret=695a1d2b6e44672200c8f31a01530f10d9e6206c';

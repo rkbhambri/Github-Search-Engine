@@ -8,7 +8,7 @@ const SearchOptions = (props) => {
                 <div className="searchBy col-md-4">
                     <select
                         className="form-control"
-                        style={{ border: 'none' }}
+                        style={{ border: 'none', boxShadow: 'none' }}
                         defaultValue="username"
                         onChange={(event) => props.searchOptionHandler(event)}>
                         <option value="username">Username</option>
@@ -19,7 +19,7 @@ const SearchOptions = (props) => {
                     <input
                         type="text"
                         className="form-control"
-                        style={{ border: 'none' }}
+                        style={{ border: 'none', boxShadow: 'none' }}
                         placeholder="Enter A Github Username"
                         onKeyDown={(event) => props.searchInputHandler(event)} />
                 </div>
