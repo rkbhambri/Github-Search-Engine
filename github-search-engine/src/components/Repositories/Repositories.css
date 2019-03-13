@@ -1,0 +1,13 @@
+.full-name{
+    font-size: 12px;
+}
+.dot{
+    height: 12px;
+    width: 12px;
+    background-color: #E34C31;
+    border-radius: 50%;
+    display: inline-block;
+}
+.repo-info, .repo-lastUpdated{
+    font-size: 13px;
+}
