@@ -86,7 +86,6 @@ class Layout extends Component {
 
 	render() {
 		let userDetails = null;
-		console.log(this.state.userData, this.state.userRepo)
 		if (this.state.userData !== null && this.state.userRepo !== null) {
 			userDetails = (
 				<div className="user-details row mt-5">
