@@ -5,7 +5,7 @@ const UserInfo = (props) => {
 	return (
 		<div className="user-info col-md-2 offset-1 p-2">
 			<div className="username">
-				<p className="text-center">{props.userData.login}</p>
+				<h4 className="text-center">{props.userData.login}</h4>
 			</div>
 			<div className="profile-image">
 				<img className="image" src={props.userData.avatar_url} alt="Profile pic not available" />

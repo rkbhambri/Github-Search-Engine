@@ -9,7 +9,7 @@ const RepositoryInfo = (props) => {
     return (
         props.userRepo.map(repoData => {
             return (
-                <div className="repository-info col-md-5 m-2 p-3">
+                <div className="repository-info col-md-5 m-2 p-3" key={repoData.id}>
                     <div className="repo-name">
                         <span className="name">{repoData.name}</span><br />
                         <span className="full-name">{repoData.full_name}</span>
