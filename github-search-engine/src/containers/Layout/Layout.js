@@ -93,6 +93,12 @@ class Layout extends Component {
 					<Repositories userRepo={this.state.userRepo} />
 				</div>
 			);
+		} else {
+			userDetails = (
+				<div className="message text-center pt-5">
+					<h2>Please Enter search String</h2>
+				</div>
+			);
 		}
 		return (
 			<div className="layout">
