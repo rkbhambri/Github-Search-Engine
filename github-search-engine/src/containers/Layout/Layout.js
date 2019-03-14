@@ -48,11 +48,6 @@ class Layout extends Component {
 						this.setState({ isUserNotFound: true })
 					}
 				});
-				// userRepo.then((userRepo) => {
-				// 	this.setState({
-				// 		userRepo
-				// 	});
-				// });
 			} else if (this.state.searchBy === 'repo') {
 				repoData = getRepoData(event.target.value);
 				repoData.then((repoData) => {
