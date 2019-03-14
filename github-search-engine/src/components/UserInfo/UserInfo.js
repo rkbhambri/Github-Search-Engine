@@ -15,12 +15,12 @@ const UserInfo = (props) => {
 			</div><br />
 			<div className="other-information m-2" style={{ fontSize: '14px' }}>
 				<div className="row pl-2 pr-2">
-					<div className="public-repo col-md-6 w-50 border p-2">{props.userData.public_repos} Public Repo</div>
-					<div className="public-repo col-md-6 w-50 border p-2">{props.userData.public_gists} Public Gists</div>
+					<div className="public-repo col-md-6 w-50 border p-1">{props.userData.public_repos} Public Repo</div>
+					<div className="public-repo col-md-6 w-50 border p-1">{props.userData.public_gists} Public Gists</div>
 				</div>
 				<div className="row pl-2 pr-2">
-					<div className="public-repo col-md-6 w-50 border p-2">{props.userData.followers} Followers</div>
-					<div className="public-repo col-md-6 w-50 border p-2">{props.userData.following} Following</div>
+					<div className="public-repo col-md-6 w-50 border p-1">{props.userData.followers} Followers</div>
+					<div className="public-repo col-md-6 w-50 border p-1">{props.userData.following} Following</div>
 				</div>
 
 			</div>

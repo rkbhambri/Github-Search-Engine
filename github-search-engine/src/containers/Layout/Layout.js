@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../../components/Header/Header';
 import { getUserData, getUserRepo, getRepoData } from '../../Helper/helper';
-import UserInfo from '../../components/UserInfo/UserInfo';
-import Repositories from '../../components/Repositories/Repositories';
+import ContentPlaceholder from '../../components/ContentPlaceholder/ContentPlaceholder';
+import UserData from '../../components/UserData/UserData';
+import RepositoryData from '../../components/RepositoryData/RepositoryData';
 
 class Layout extends Component {
 
@@ -53,10 +54,10 @@ class Layout extends Component {
 				// 	});
 				// });
 			} else if (this.state.searchBy === 'repo') {
-				repoData = getRepoData(this.state.searchBy);
+				repoData = getRepoData(event.target.value);
 				repoData.then((repoData) => {
 					this.setState({
-						repoData
+						repoData: repoData.items
 					});
 				});
 			}
@@ -68,36 +69,16 @@ class Layout extends Component {
 	};
 
 	render() {
-		let userDetails = null;
-		if (this.state.isUserNotFound) {
-			userDetails = (
-				<div className="message text-center pt-5">
-					<h2>User not found</h2>
-				</div>
-			)
-		}
-		if (this.state.userData !== null && this.state.userRepo !== null) {
-			userDetails = (
-				<div className="user-details row mt-5">
-					<UserInfo userData={this.state.userData} />
-					<Repositories userRepo={this.state.userRepo} />
-				</div>
-			);
-		}
-		if (!this.state.isUserNotFound && this.state.userData === null && this.state.userRepo === null) {
-			userDetails = (
-				<div className="message text-center pt-5">
-					<h2>Please Enter search String</h2>
-				</div>
-			);
-		}
 		return (
 			<div className="layout">
 				<Header
 					searchOptionHandler={(event) => this.searchOptionHandler(event)}
 					searchInputHandler={(event) => this.searchInputHandler(event)}
 				/>
-				{userDetails}
+				<ContentPlaceholder {...this.state} />
+				{
+					this.state.searchBy === 'username' ? <UserData {...this.state} /> : <RepositoryData {...this.state} />
+				}
 			</div>
 		);
 	};

@@ -16,7 +16,6 @@ const Repositories = (props) => {
 						<h5>No repository found</h5>
 					</div>
 			}
-
 		</div>
 	);
 };
