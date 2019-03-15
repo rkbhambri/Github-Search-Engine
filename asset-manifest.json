@@ -1,15 +1,15 @@
 {
-  "main.css": "/Github-Search-Engine/static/css/main.4f788243.chunk.css",
-  "main.js": "/Github-Search-Engine/static/js/main.e55d94f1.chunk.js",
-  "main.js.map": "/Github-Search-Engine/static/js/main.e55d94f1.chunk.js.map",
-  "runtime~main.js": "/Github-Search-Engine/static/js/runtime~main.8c806504.js",
-  "runtime~main.js.map": "/Github-Search-Engine/static/js/runtime~main.8c806504.js.map",
-  "static/css/2.f9eb6360.chunk.css": "/Github-Search-Engine/static/css/2.f9eb6360.chunk.css",
-  "static/js/2.c5047151.chunk.js": "/Github-Search-Engine/static/js/2.c5047151.chunk.js",
-  "static/js/2.c5047151.chunk.js.map": "/Github-Search-Engine/static/js/2.c5047151.chunk.js.map",
-  "index.html": "/Github-Search-Engine/index.html",
-  "precache-manifest.cd98d0cbd8f72da6dca9afc839d99d2e.js": "/Github-Search-Engine/precache-manifest.cd98d0cbd8f72da6dca9afc839d99d2e.js",
-  "service-worker.js": "/Github-Search-Engine/service-worker.js",
-  "static/css/2.f9eb6360.chunk.css.map": "/Github-Search-Engine/static/css/2.f9eb6360.chunk.css.map",
-  "static/css/main.4f788243.chunk.css.map": "/Github-Search-Engine/static/css/main.4f788243.chunk.css.map"
+  "main.css": "/Github-Search-Engine/tree/master/github-search-engine/static/css/main.4f788243.chunk.css",
+  "main.js": "/Github-Search-Engine/tree/master/github-search-engine/static/js/main.fb8494cc.chunk.js",
+  "main.js.map": "/Github-Search-Engine/tree/master/github-search-engine/static/js/main.fb8494cc.chunk.js.map",
+  "runtime~main.js": "/Github-Search-Engine/tree/master/github-search-engine/static/js/runtime~main.584b9a4b.js",
+  "runtime~main.js.map": "/Github-Search-Engine/tree/master/github-search-engine/static/js/runtime~main.584b9a4b.js.map",
+  "static/css/2.f9eb6360.chunk.css": "/Github-Search-Engine/tree/master/github-search-engine/static/css/2.f9eb6360.chunk.css",
+  "static/js/2.c5047151.chunk.js": "/Github-Search-Engine/tree/master/github-search-engine/static/js/2.c5047151.chunk.js",
+  "static/js/2.c5047151.chunk.js.map": "/Github-Search-Engine/tree/master/github-search-engine/static/js/2.c5047151.chunk.js.map",
+  "index.html": "/Github-Search-Engine/tree/master/github-search-engine/index.html",
+  "precache-manifest.4304ad6c26bf7c5d53c25ec0615f5eda.js": "/Github-Search-Engine/tree/master/github-search-engine/precache-manifest.4304ad6c26bf7c5d53c25ec0615f5eda.js",
+  "service-worker.js": "/Github-Search-Engine/tree/master/github-search-engine/service-worker.js",
+  "static/css/2.f9eb6360.chunk.css.map": "/Github-Search-Engine/tree/master/github-search-engine/static/css/2.f9eb6360.chunk.css.map",
+  "static/css/main.4f788243.chunk.css.map": "/Github-Search-Engine/tree/master/github-search-engine/static/css/main.4f788243.chunk.css.map"
 }
