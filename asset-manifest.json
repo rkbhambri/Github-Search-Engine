@@ -1,15 +1,15 @@
 {
-  "main.css": "/rkbhambri/Github-Search-Engine/static/css/main.4f788243.chunk.css",
-  "main.js": "/rkbhambri/Github-Search-Engine/static/js/main.e3cd9b55.chunk.js",
-  "main.js.map": "/rkbhambri/Github-Search-Engine/static/js/main.e3cd9b55.chunk.js.map",
-  "runtime~main.js": "/rkbhambri/Github-Search-Engine/static/js/runtime~main.9796f064.js",
-  "runtime~main.js.map": "/rkbhambri/Github-Search-Engine/static/js/runtime~main.9796f064.js.map",
-  "static/css/2.f9eb6360.chunk.css": "/rkbhambri/Github-Search-Engine/static/css/2.f9eb6360.chunk.css",
-  "static/js/2.c5047151.chunk.js": "/rkbhambri/Github-Search-Engine/static/js/2.c5047151.chunk.js",
-  "static/js/2.c5047151.chunk.js.map": "/rkbhambri/Github-Search-Engine/static/js/2.c5047151.chunk.js.map",
-  "index.html": "/rkbhambri/Github-Search-Engine/index.html",
-  "precache-manifest.a8ca955a3d19b2e3a08b8da08ec173f1.js": "/rkbhambri/Github-Search-Engine/precache-manifest.a8ca955a3d19b2e3a08b8da08ec173f1.js",
-  "service-worker.js": "/rkbhambri/Github-Search-Engine/service-worker.js",
-  "static/css/2.f9eb6360.chunk.css.map": "/rkbhambri/Github-Search-Engine/static/css/2.f9eb6360.chunk.css.map",
-  "static/css/main.4f788243.chunk.css.map": "/rkbhambri/Github-Search-Engine/static/css/main.4f788243.chunk.css.map"
+  "main.css": "/Github-Search-Engine/static/css/main.4f788243.chunk.css",
+  "main.js": "/Github-Search-Engine/static/js/main.e55d94f1.chunk.js",
+  "main.js.map": "/Github-Search-Engine/static/js/main.e55d94f1.chunk.js.map",
+  "runtime~main.js": "/Github-Search-Engine/static/js/runtime~main.8c806504.js",
+  "runtime~main.js.map": "/Github-Search-Engine/static/js/runtime~main.8c806504.js.map",
+  "static/css/2.f9eb6360.chunk.css": "/Github-Search-Engine/static/css/2.f9eb6360.chunk.css",
+  "static/js/2.c5047151.chunk.js": "/Github-Search-Engine/static/js/2.c5047151.chunk.js",
+  "static/js/2.c5047151.chunk.js.map": "/Github-Search-Engine/static/js/2.c5047151.chunk.js.map",
+  "index.html": "/Github-Search-Engine/index.html",
+  "precache-manifest.cd98d0cbd8f72da6dca9afc839d99d2e.js": "/Github-Search-Engine/precache-manifest.cd98d0cbd8f72da6dca9afc839d99d2e.js",
+  "service-worker.js": "/Github-Search-Engine/service-worker.js",
+  "static/css/2.f9eb6360.chunk.css.map": "/Github-Search-Engine/static/css/2.f9eb6360.chunk.css.map",
+  "static/css/main.4f788243.chunk.css.map": "/Github-Search-Engine/static/css/main.4f788243.chunk.css.map"
 }
