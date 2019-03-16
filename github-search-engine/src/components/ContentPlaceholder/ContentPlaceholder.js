@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ContentPlaceholder = (props) => {
-    console.log('----repoData----', !props.isUserNotFound && props.userData === null && props.userRepo === null)
     let contentPlaceholder = null;
     if (!props.isUserNotFound && props.userData === null && props.userRepo === null && props.repoData === null) {
         contentPlaceholder = (
