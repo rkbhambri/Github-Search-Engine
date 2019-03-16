@@ -1,8 +1,9 @@
 import React from 'react';
 
 const ContentPlaceholder = (props) => {
+    console.log('----repoData----', !props.isUserNotFound && props.userData === null && props.userRepo === null)
     let contentPlaceholder = null;
-    if ((!props.isUserNotFound && props.userData === null && props.userRepo === null) || props.repoData === null) {
+    if (!props.isUserNotFound && props.userData === null && props.userRepo === null && props.repoData === null) {
         contentPlaceholder = (
             <div className="content-placeholder text-center pt-5">
                 <h2>Please Enter search String</h2>
